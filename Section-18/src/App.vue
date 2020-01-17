@@ -43,8 +43,7 @@
             opacity: 1;
         }
     }
-    @keyframes slide-out{
-        from{
+    @keyframes slide-out{        from{
             transform: translateY(0);
             opacity: 1;
         }

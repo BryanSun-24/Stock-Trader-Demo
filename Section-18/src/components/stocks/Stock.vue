@@ -2,7 +2,8 @@
     <div class="col-sm-6 col-md-4">
          <div class="panel panel-success">
              <div class="panel-heading">
-                 <h3 class="panel-title">{{ stock.name }}
+                 <h3 class="panel-title">
+                     {{ stock.name }}
                      <small>(Price: {{ stock.price }})</small>
                  </h3>
              </div>
@@ -19,9 +20,10 @@
                 </div>
                 <div class="pull-right">
                     <button class="btn btn-success"
-                    @click="buyStock"
-                    :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)" 
-                    >{{ insufficientFunds ? 'Insufficient Funds': 'Buy'}}</button>
+                        @click="buyStock"
+                        :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)" 
+                    >{{ insufficientFunds ? 'Insufficient Funds': 'Buy'}}
+                    </button>
                 </div> 
              </div>
          </div>
