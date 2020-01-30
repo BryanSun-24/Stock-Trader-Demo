@@ -37,6 +37,8 @@
 </style>
 
 <script>
+import axios from 'axios';
+
 export default {
     props:['stock'],
     data(){
@@ -62,7 +64,7 @@ export default {
             console.log(order);
             this.$store.dispatch('buyStock', order) // we can dispatch action across module
             this.quantity = 0;
-        }
+        },
     }
 }
 </script>

@@ -4,6 +4,10 @@ import VueRouter from 'vue-router'
 import {routes} from './routes.js'
 import store from './store/store';
 import VueResource from 'vue-resource';
+import babelPolyfill from 'babel-polyfill'
+import axios from 'axios';
+
+
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
